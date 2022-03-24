@@ -3,7 +3,7 @@ package com.coffeeshop.app;
 public final class Cafe {
 
 	private int beansInStock = 0;
-	private int milkIntStock = 0;
+	private int milkInStock = 0;
 
 	public Coffee brew(CoffeeType coffeeType) {
 
@@ -26,14 +26,14 @@ public final class Cafe {
 		return new Coffee(coffeeType, requiredBeans, requiredMilk);
 	}
 
-	public void restockBeans(weightInGrams) {
+	public void restockBeans(int weightInGrams) {
 		requirePositive(weightInGrams);
 		beansInStock += weightInGrams;
 	}
 
-	public void restockMilk(weightInGrams) {
+	public void restockMilk(int weightInGrams) {
 		requirePositive(weightInGrams);
-		milkInStock += wightInGrams;
+		milkInStock += weightInGrams;
 	}
 
 	private void requirePositive(int value) {

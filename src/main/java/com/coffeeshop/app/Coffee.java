@@ -36,3 +36,5 @@ public final class Coffee {
 			", beans=" + beans +
 			", milk=" + milk +
 			"}";
+	}
+}

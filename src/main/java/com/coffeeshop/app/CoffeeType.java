@@ -24,3 +24,4 @@ public enum CoffeeType{
 		return requiredMilk;
 
 	}
+}
